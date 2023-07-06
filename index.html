@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⛅ Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark gradient-background ">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="./logo.png" height="50" alt="">
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About The App</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">How to use?</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input id="city" type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2" id="submit">Search</button>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <h1 class="my-5 text-center heading ">Weather Of <span id="cityName"></span></h1>
+
+      <div class="container"> 
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 gradient-background">
+              <h4 class="my-0 fw-normal">Humidity Info</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="humidity2"></span</li><small class="text-body-secondary fw-light"></small>%</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Humidity is <span id="humidity"></span</li>
+    
+                <li>Feels Like <span id="feels_like"></span</li>
+                <li>Wind Degree is <span id="wind_degrees"></span</li>
+                
+              </ul>
+              <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm g">
+            <div class="card-header py-3 gradient-background">
+              <h4 class="my-0 fw-normal">Temperature</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="temp2"></span><span>&#8451;</span><small class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                
+                <li>Temperature is <span id="temp"></span></li>
+                <li>Min Temperature is <span id="min_temp"></span</li>
+                <li>Max Temperature is <span id="max_temp"></span</li>
+              </ul>
+              <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+            <div class="card-header py-3 text-bg-primary border-primary gradient-background">
+              <h4 class="my-0 fw-normal">More Info</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span<<small class="text-body-secondary fw-light">km/hr</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                
+                <li>Wind Speed is <span id="wind_speed"></span</li>
+                <li>Sunrise Time is <span id="sunrise"></span</li>
+                <li>Sunset Time is <span id="sunset"></span</li>
+              </ul>
+              <!-- <button type="button" class="w-100 btn btn-lg gradient-background ">Contact us</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="footer" class="gradient-background ">
+        <div class="container ">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+            <div class="col mb-3">
+              
+              <p class="text-body-white bold">⛅ Weather App</p>
+            </div>
+        
+            <div class="col mb-3">
+        
+            </div>
+        
+            <div class="col mb-3 text-white">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3 text-white">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3 text-white">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./java.js"></script>
+  </body>
+</html>
